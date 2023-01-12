@@ -1,0 +1,84 @@
+ 
+[
+    {
+        "_id": 1,
+        "title": "Men Regular Fit Solid Spread Collar Casual Shirt",
+        "price" : 359,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/l1v1uvk0/shirt/4/i/s/m-st2-vebnor-original-imagdbvtz3bwk642.jpeg?q=70",
+        "size" : [ "S", "M", "L" , "XL" ],
+        "brand" : "CYPHUS",
+        "ideal" : "men"
+      },
+      {
+        "_id": 2,
+        "title": "Men Regular Fit Black Cotton Blend Trousers",
+        "price" : 399,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/ksgehzk0/trouser/j/p/t/32-cyfor-a-cyphus-original-imag6yyywggdz4z2.jpeg?q=70",
+        "size" : [ "M", "L" , "XL" ],
+        "brand" : "CYPHUS",
+        "ideal" : "men"
+      },
+      {
+        "_id": 3,
+        "title": "Men Solid Polo Neck Green Casual Regular T-Shirt",
+        "price" : 299,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/n/h/6/m-db1024-42-3bros-original-imaghgcujgjzqxhg.jpeg?q=70",
+        "size" : [ "S", "L" , "XL" ],
+        "brand" : "ARROW",
+        "ideal" : "men"
+      },
+      {
+        "_id": 4,
+        "title": "Men Slim Fit Solid Cut Away Collar Formal Shirt",
+        "price" : 989,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/xif0q/shirt/r/5/n/-original-imaggydheanhmvtm.jpeg?q=70",
+        "size" : [ "L" , "XL" ],
+        "brand" : "ARROW",
+        "ideal" : "men"
+      },
+      {
+        "_id": 5,
+        "title": "Women Full Sleeve Graphic Print Hooded Sweatshirt",
+        "price" : 599,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/kirr24w0-0/sweatshirt/p/p/l/xl-dancing-girl-hoodie-w-divra-clothing-original-imafyhwuugg3vsty.jpeg?q=70",
+        "size" : [ "S", "M", "L" , "XL" ],
+        "brand" : "Roadster",
+        "ideal" : "women"
+      },
+      {
+        "_id": 6,
+        "title": "Women Floral Print Round Neck Green Sweater",
+        "price" : 698,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/kwpam4w0/sweater/c/l/8/l-14071608-dressberry-original-imag9bnzr45snfct.jpeg?q=70",
+        "size" : [ "S", "M","XL" ],
+        "brand" : "Dressberry",
+        "ideal" : "women"
+      },
+      {
+        "_id": 7,
+        "title": "Women Floral Print V Neck Grey Sweater",
+        "price" : 699,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/k37mg7k0/sweater/w/q/m/xl-mod-7602-grey-modeve-original-imafme7vt3wdzjbd.jpeg?q=70",
+        "size" : [ "S", "M"],
+        "brand" : "Roadster",
+        "ideal" : "women"
+      },
+      {
+        "_id": 8,
+        "title": "Men Striped Round Neck Dark Blue Sweater",
+        "price" : 629,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/kgmla4w0/sweater/y/x/v/s-11963610-roadster-original-imafwtfhmtngyxgf.jpeg?q=70",
+        "size" : [ "S", "L" , "XL" ],
+        "brand" : "Roadster",
+        "ideal" : "men"
+      },
+      {
+        "_id": 9,
+        "title": "Men Solid High Neck Dark Blue Sweater",
+        "price" : 799,
+        "image" : "https://rukminim1.flixcart.com/image/832/832/xif0q/sweater/e/e/v/m-kmswfm42-light-navy-numero-uno-original-imagg7zkhks3vcdu.jpeg?q=70",
+        "size" : [ "S", "M", "L"  ],
+        "brand" : "NUMERO UNO",
+        "ideal" : "men"
+      }
+]
