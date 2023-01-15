@@ -5,7 +5,7 @@ import data from "../utils/ProductData.json";
 import Sort from "./Sort";
 
 const ProductList = () => {
-  const [sortBy, setSortBy] = useState("default");
+  const [sortBy, setSortBy] = useState("");
   const Allbrand = useSelector((state) => state.filter.brand);
   const Allsize = useSelector((state) => state.filter.size);
   const Ideal = useSelector((state) => state.filter.ideal);
@@ -85,9 +85,9 @@ const ProductList = () => {
   }, [clearFilter , dispatch]);
 
   return (
-    <div className="w-[98vw] flex flex-col justify-center items-center bg-gray-200 pb-5">
+    <div className="w-[98vw] ml-3 flex flex-col justify-center items-center bg-gray-200 pb-5">
       <Sort setSortBy={setSortBy} />
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-3 gap-10 ml-40">
         {brandData &&
           brandData.map((item) => {
             return (

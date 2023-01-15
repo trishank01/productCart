@@ -10,7 +10,7 @@ const FilterByGender = () => {
         dispatch(GENDER_VALUE(gender))
     }
 
-
+    console.log(Ideal)
   return (
     <div className='flex flex-col items-center mt-2 gap-3'>
         <h4>GENDER</h4>
