@@ -1,53 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React  from "react";
+import { useDispatch } from "react-redux";
+import {  CLEAR_FILTER } from "../redux/filterSlice";
+import FilterByGender from "./Filters/FilterByGender";
+import FiltersBySize from "./Filters/FilterBySize";
+import FiltersByBrand from "./Filters/FiltersByBrand";
 import data from "../utils/ProductData.json";
-import {BiDownArrow} from "react-icons/bi"
+
+
 
 const Filters = () => {
-  const [isOpen , setIsOpen] = useState(false)
-  const [uniqueBrand , setUniqueBrand] = useState([])
-  const [selectedValue , setSelectedValue] = useState([])
-
-  useEffect(() => {
-     const brand = data.map((item) => item.brand)
-     const newSet = new Set(brand)
-     setUniqueBrand([...newSet])
-  },[])
-
-
-  const handleDropDown = () => {
-    setIsOpen(!isOpen)
-  }
-
-
-  const handleCheckBox = (e) => {
-    const {value , checked} = e.target
-    if(checked){
-      setSelectedValue([...selectedValue , value])
-    }else {
-      const filtered = selectedValue.filter((item) => item !== value)
-       setSelectedValue(filtered)
+ const dispatch = useDispatch()
+    const handleClearFilter = () => {
+      dispatch(CLEAR_FILTER(data))
     }
-  }
+
 
   return (
     <div className="w-[14vw] bg-gray-400">
-      <div className="flex flex-col ">
-        <div className="flex justify-evenly p-2 mt-2 mx-4 bg-white cursor-pointer" onClick={handleDropDown} > 
-         <p>Brand</p>  
-        <BiDownArrow className={`${isOpen ? "duration-300" : "rotate-180 duration-300"}`}/> 
-        </div>
-        <div> 
-        {isOpen && uniqueBrand.map((item) => {
-          return (
-            <div key={item} className="flex gap-3 justify-start ml-4 mt-2 duration-300">
-              <input type="checkbox" value={item} className="w-[15px] h-[15px]" onClick={handleCheckBox}/>
-              <label>{item}</label>
-            </div>
-          );
-        })}
-        </div>
-      </div>
-      <div>Size</div>
+      <FiltersByBrand/>
+      <FiltersBySize/>
+      <FilterByGender/>
+      <button className="flex justify-center bg-white mt-4 p-3 ml-16 rounded-lg m-3 cursor-pointer border-none" onClick={handleClearFilter}>Clear All</button>
     </div>
   );
 };

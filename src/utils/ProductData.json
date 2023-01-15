@@ -43,7 +43,7 @@
         "image" : "https://rukminim1.flixcart.com/image/832/832/kirr24w0-0/sweatshirt/p/p/l/xl-dancing-girl-hoodie-w-divra-clothing-original-imafyhwuugg3vsty.jpeg?q=70",
         "size" : [ "S", "M", "L" , "XL" ],
         "brand" : "Roadster",
-        "ideal" : "women"
+        "ideal" : "female"
       },
       {
         "_id": 6,
@@ -52,7 +52,7 @@
         "image" : "https://rukminim1.flixcart.com/image/832/832/kwpam4w0/sweater/c/l/8/l-14071608-dressberry-original-imag9bnzr45snfct.jpeg?q=70",
         "size" : [ "S", "M","XL" ],
         "brand" : "Dressberry",
-        "ideal" : "women"
+        "ideal" : "female"
       },
       {
         "_id": 7,
@@ -61,7 +61,7 @@
         "image" : "https://rukminim1.flixcart.com/image/832/832/k37mg7k0/sweater/w/q/m/xl-mod-7602-grey-modeve-original-imafme7vt3wdzjbd.jpeg?q=70",
         "size" : [ "S", "M"],
         "brand" : "Roadster",
-        "ideal" : "women"
+        "ideal" : "female"
       },
       {
         "_id": 8,
