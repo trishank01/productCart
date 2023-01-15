@@ -85,7 +85,7 @@ const ProductList = () => {
   }, [clearFilter , dispatch]);
 
   return (
-    <div className="w-[86vw] flex flex-col justify-center items-center bg-gray-200 pb-5">
+    <div className="w-[98vw] flex flex-col justify-center items-center bg-gray-200 pb-5">
       <Sort setSortBy={setSortBy} />
       <div className="grid grid-cols-3 gap-10">
         {brandData &&

@@ -7,8 +7,9 @@ import data from "../../utils/ProductData.json"
 const FiltersByBrand = () => {
     const [isOpen , setIsOpen] = useState(false)
     const [uniqueBrand , setUniqueBrand] = useState([])
+    const [CheckedBox , setCheckedBox] = useState([])
     const clearFilter = useSelector((state) => state.filter.clearFilter);
-    console.log(clearFilter)
+    const Allbrand = useSelector((state) => state.filter.brand);
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -24,15 +25,21 @@ const FiltersByBrand = () => {
 
   
       const handleCheckBox = (e) => {
-      let {value , checked} = e.target
+      const {value , checked} = e.target
+      setCheckedBox([...CheckedBox , value])
       dispatch(BRAND_CHECKBOX_VALUE({value , checked}))
-
+       
     }
 
+ 
    
+   console.log(CheckedBox)
   return (
     <>
           <div className="flex flex-col ">
+       
+
+           
         <div className="flex justify-evenly p-2 mt-2 mx-4 bg-white cursor-pointer" onClick={handleDropDown} > 
          <p>Filter By Brand</p>  
         <BiDownArrow className={`${isOpen ? "duration-300" : "rotate-180 duration-300"}`}/> 
@@ -41,11 +48,13 @@ const FiltersByBrand = () => {
         {isOpen && uniqueBrand.map((item) => {
           return (
             <div key={item} className="flex gap-3 justify-start ml-4 mt-2 duration-300" >
-              <input type="checkbox" value={item}  className="w-[15px] h-[15px]" onChange={handleCheckBox} />
+              <input type="checkbox"  value={item} checked={Allbrand.includes(item)} className="w-[15px] h-[15px]" onChange={handleCheckBox} />
               <label>{item}</label>
             </div>
           );
         })}
+   
+ 
         </div>
       </div>
       </>

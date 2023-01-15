@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { BiDownArrow } from "react-icons/bi";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { SIZE_CHECKBOX_VALUE } from "../../redux/filterSlice";
 
 const FiltersBySize = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const Allsize = useSelector((state) => state.filter.size);
  
   const dispatch = useDispatch();
 
@@ -38,6 +39,7 @@ const FiltersBySize = () => {
                   value="S"
                   className="w-[15px] h-[15px]"
                   onClick={handleCheckBox}
+                  checked={Allsize.includes("S")}
                 />
                 <label>Small</label>
               </div>
@@ -47,6 +49,7 @@ const FiltersBySize = () => {
                   value="M"
                   className="w-[15px] h-[15px]"
                   onClick={handleCheckBox}
+                  checked={Allsize.includes("M")}
                 />
                 <label>Medium</label>
               </div>
@@ -56,6 +59,7 @@ const FiltersBySize = () => {
                 value="L"
                 className="w-[15px] h-[15px]"
                 onClick={handleCheckBox}
+                checked={Allsize.includes("L")}
               />
               <label>Large</label>
               </div>
@@ -65,6 +69,7 @@ const FiltersBySize = () => {
                 value="XL"
                 className="w-[15px] h-[15px]"
                 onClick={handleCheckBox}
+                checked={Allsize.includes("XL")}
               />
               <label>Extra Large</label>
               </div>

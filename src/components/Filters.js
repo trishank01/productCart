@@ -16,11 +16,11 @@ const Filters = () => {
 
 
   return (
-    <div className="w-[14vw] bg-gray-400">
+    <div className="w-[14vw] fixed top-0 left-0 bottom-0 bg-gray-400">
       <FiltersByBrand/>
       <FiltersBySize/>
       <FilterByGender/>
-      <button className="flex justify-center bg-white mt-4 p-3 ml-16 rounded-lg m-3 cursor-pointer border-none" onClick={handleClearFilter}>Clear All</button>
+      <button type="reset" className="flex justify-center bg-white mt-4 p-3 ml-16 rounded-lg m-3 cursor-pointer border-none" onClick={handleClearFilter}>Clear All</button>
     </div>
   );
 };
